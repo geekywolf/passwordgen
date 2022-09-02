@@ -64,9 +64,20 @@ body{
     }
 
     .passwords{
-        display: flex;
-        justify-content: center;
+        h4{
+            color: white;
+            margin: .1em .5em 1em;
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: .8em;
+            background-color: rgb(16, 77, 245);
+            width: fit-content;
+            padding: .6em;
+            border-radius: .8em;
+        }
         .passwordfield{
+            display: flex;
+            justify-content: center;
             p{
                 margin: .5em .5em;
                 padding: .9em .5em;
@@ -86,13 +97,7 @@ body{
     }
 }
 
-// mobile view
-@media only screen and (min-device-width : 360px){
-    h1{
-        font-size: 1em;
-        color: red;
-    }
-}
+
 
 // tablet view
 @media only screen and (min-device-width : 720px){
@@ -130,12 +135,72 @@ body{
         }
 
         .passwords{
+            h4{
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 1.1em;
+                padding: .6em;
+                border-radius: .8em;
+            }
             .passwordfield{
                 p{
                     margin-top: .3em;
                     width: 21vw;
                     min-height: 1vh;
                     padding: .5em 1em;
+                }
+            }
+        }
+    }
+}
+
+// desktop view
+@media only screen and (min-device-width : 1240px){
+    .main{
+        margin-top: 15vh;
+        h1{
+            font-size: 4em;
+        }
+        p{
+            margin-top: -1.7em;
+            font-size: 1.5em;
+        }
+        label{
+            font-size: 2em;
+            margin-right: .5em;
+        }    
+        button{
+            padding: .8em;
+            margin-bottom: 1em;
+            font-size: 1.4em;
+            border-radius: .4em;
+        }
+        .passwords{
+            h4{
+                color: white;
+                margin: .1em 0em 1em;
+                font-family: 'Inter';
+                font-weight: 400;
+                font-size: 1.2em;
+                background-color: rgb(16, 77, 245);
+                width: fit-content;
+                padding: .5em;
+                border-radius: .8em;
+            }
+            .passwordfield{
+                display: flex;
+                justify-content: center;
+                margin-left: -1em;
+                p{
+                    margin: .5em .6em;
+                    padding: .9em .7em;
+                    width: 43%;
+                    border-radius: .5em;
+                    text-align: center;
+                    word-wrap:break-word
+                }
+                p:hover{
+                    cursor: pointer;
                 }
             }
         }
